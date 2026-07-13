@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "slug": "insertion-deletion-array",
+    "title": "Question 1: Insertion and deletion operations in an array",
+    "problem_statement": "Insert: shift elements right from the insert position, then place the value. Delete: shift elements left over the deleted position.",
+    "code_file": "/snippets/q1.c",
+    "image_path": "/images/Q1_Output.webp",
+    "complexities": {
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "linear-binary-search",
+    "title": "Question 2: Search for an element using Linear Search and Binary Search",
+    "problem_statement": "Linear Search works on unsorted data. Binary Search requires the array to be sorted.",
+    "code_file": "/snippets/q2.c",
+    "image_path": "/images/Q2_Output.webp",
+    "complexities": {
+      "time": "O(n) / O(log n)",
+      "space": "O(1)"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "bubble-selection-insertion-sort",
+    "title": "Question 3: Sort an array using Bubble Sort, Selection Sort, and Insertion Sort",
+    "problem_statement": "Implement Bubble Sort, Selection Sort, and Insertion Sort algorithms to sort an array. Each function works on its own copy so the three runs are independent.",
+    "code_file": "/snippets/q3.c",
+    "image_path": "/images/Q3_Output.webp",
+    "complexities": {
+      "time": "O(n^2)",
+      "space": "O(1)"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "merge-two-arrays",
+    "title": "Question 4: Merge two arrays into one",
+    "problem_statement": "Merge two sorted arrays into one. If both inputs are already sorted, a two-pointer merge produces a sorted result.",
+    "code_file": "/snippets/q4.c",
+    "image_path": "/images/Q4_Output.webp",
+    "complexities": {
+      "time": "O(n + m)",
+      "space": "O(n + m)"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "add-subtract-matrices",
+    "title": "Question 5: Add and subtract two matrices",
+    "problem_statement": "Add and subtract two matrices. Both operations require identical dimensions and run applying the operation element-wise.",
+    "code_file": "/snippets/q5.c",
+    "image_path": "/images/Q5_Output.webp",
+    "complexities": {
+      "time": "O(rows * cols)",
+      "space": "O(rows * cols)"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "multiply-two-matrices",
+    "title": "Question 6: Multiply two matrices",
+    "problem_statement": "Multiply two matrices. Valid only when A's column count equals B's row count.",
+    "code_file": "/snippets/q6.c",
+    "image_path": "/images/Q6_Output.webp",
+    "complexities": {
+      "time": "O(rows_A * cols_B * cols_A)",
+      "space": "O(rows_A * cols_B)"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "stack-operations-array",
+    "title": "Question 7: Stack operations using an array",
+    "problem_statement": "Implement stack operations using an array (LIFO structure). `top == -1` means the stack is empty.",
+    "code_file": "/snippets/q7.c",
+    "image_path": "/images/Q7_Output.webp",
+    "complexities": {
+      "time": "O(1)",
+      "space": "O(n)"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "evaluate-postfix-expression",
+    "title": "Question 8: Evaluate a postfix expression using a stack",
+    "problem_statement": "Scan left to right: push operands; on an operator, pop two operands, apply it, push the result back. The final stack value is the answer.",
+    "code_file": "/snippets/q8.c",
+    "image_path": "/images/Q8_Output.webp",
+    "complexities": {
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "recursion-examples",
+    "title": "Question 9: Recursion examples (Factorial, GCD, Tower of Hanoi)",
+    "problem_statement": "Implement recursion examples: Factorial, GCD using Euclidean algorithm, and Tower of Hanoi.",
+    "code_file": "/snippets/q9.c",
+    "image_path": "/images/Q9_Output.webp",
+    "complexities": {
+      "time": "Varies",
+      "space": "Varies"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "queue-operations-array",
+    "title": "Question 10: Simple queue operations using an array",
+    "problem_statement": "Implement simple queue operations using an array (FIFO structure). This is a linear queue (not circular).",
+    "code_file": "/snippets/q10.c",
+    "image_path": "/images/Q10_Output.webp",
+    "complexities": {
+      "time": "O(1)",
+      "space": "O(n)"
+    }
+  }
+]

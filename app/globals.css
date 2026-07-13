@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+/* ─── Design Token Definitions ─────────────────────────────────────────────── */
+:root {
+  /* Surfaces */
+  --bg-base:    #000000;   /* true black — AMOLED pixel-off */
+  --bg-raised:  #0a0a0a;   /* cards, sidebar */
+  --bg-hover:   #141414;   /* hover state surfaces */
+
+  /* Typography */
+  --text-primary:   #f2f2f0;   /* off-white — avoids white-on-black vibration */
+  --text-secondary: #8a8a85;   /* muted warm grey */
+  --text-tertiary:  #4a4a47;
+
+  /* Accent */
+  --accent-primary:   #7dffb3; /* acid mint-green — signature, use sparingly */
+  --accent-secondary: #ff6b4a; /* warm coral — badges, secondary emphasis */
+  --accent-line:      #1a1a1a; /* borders, dividers */
+
+  /* Code */
+  --code-bg: #050505;
+
+  /* Type scale */
+  --text-xs:      0.75rem;
+  --text-sm:      0.875rem;
+  --text-base:    1rem;
+  --text-lg:      1.25rem;
+  --text-xl:      1.75rem;
+  --text-display: 2.5rem;
+
+  /* Font families */
+  --font-display: var(--font-display, 'Sora', sans-serif);
+  --font-body:    var(--font-body, 'Inter', sans-serif);
+  --font-mono:    var(--font-mono, 'JetBrains Mono', monospace);
+}
+
+/* ─── Tailwind v4 theme extension ───────────────────────────────────────────── */
+@theme inline {
+  /* Expose our surfaces as Tailwind color utilities */
+  --color-bg-base:    var(--bg-base);
+  --color-bg-raised:  var(--bg-raised);
+  --color-bg-hover:   var(--bg-hover);
+
+  --color-text-primary:   var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary:  var(--text-tertiary);
+
+  --color-accent:      var(--accent-primary);
+  --color-accent-warm: var(--accent-secondary);
+  --color-accent-line: var(--accent-line);
+
+  --color-code-bg: var(--code-bg);
+
+  /* Font stacks */
+  --font-sans:    var(--font-body);
+  --font-display: var(--font-display);
+  --font-mono:    var(--font-mono);
+}
+
+/* ─── Base reset ────────────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body), 'Inter', sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-base);
+}
+
+/* ─── Typography helpers ────────────────────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display), 'Sora', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-mono {
+  font-family: var(--font-mono), 'JetBrains Mono', monospace;
+}
+
+/* ─── Motion preference ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@keyframes fadeInLine {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
