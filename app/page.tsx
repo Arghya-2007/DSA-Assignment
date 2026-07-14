@@ -29,7 +29,7 @@ export default function Home() {
           <FadeIn delayMs={240}>
             <div className="text-[--text-tertiary] text-base lg:text-lg flex flex-col gap-1">
               <p>Techno Main Salt Lake</p>
-              <p>CC104 — Data Structures Lab</p>
+              <p>CC292 — Data Structures Lab</p>
             </div>
           </FadeIn>
 
@@ -40,7 +40,17 @@ export default function Home() {
           </FadeIn>
 
           <FadeIn delayMs={400} direction="up">
-            <ViewQuestionsButton />
+            <div className="flex flex-row items-center gap-4">
+              <ViewQuestionsButton />
+              <a
+                href="https://drive.google.com/drive/folders/1_y68A7I00Sncjyy2Im3HK-u2q6Jlz5nd?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 px-8 py-4 bg-[--bg-raised] border border-[--accent-line] text-[--text-primary] hover:text-[--accent-primary] hover:border-[--accent-primary] transition-colors font-medium w-fit text-lg cursor-pointer"
+              >
+                Google Drive
+              </a>
+            </div>
           </FadeIn>
         </div>
 
